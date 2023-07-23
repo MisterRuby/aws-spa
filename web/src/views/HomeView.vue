@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import axios from "axios";
+import api from "@/api";
 
 const onclickButton = () => {
   alert("API 요청!")
-  axios.post('http://localhost:8080')
+  api.post("/")
     .then(res => {
-      alert("API 요청 완료!")
+      alert("API 요청 완료!");
     })
     .catch(e => {
-      alert("API 요청 실패!")
+      alert("API 요청 실패!");
+      alert("API 요청 실패!");
     })
 }
 
@@ -22,7 +23,7 @@ const onclickButton = () => {
   </div>
 </template>
 
-<style>
+<style scoped>
 .container {
   display: flex;
   flex-direction: column;
