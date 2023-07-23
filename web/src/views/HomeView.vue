@@ -9,7 +9,6 @@ const onclickButton = () => {
     })
     .catch(e => {
       alert("API 요청 실패!");
-      alert("API 요청 실패!");
     })
 }
 
@@ -17,8 +16,6 @@ const onclickButton = () => {
 
 <template>
   <div class="container">
-    <div>Web Server URL : localhost:5173</div>
-    <div>API Server URL : localhost:8080</div>
     <button @click="onclickButton">API 요청</button>
   </div>
 </template>
