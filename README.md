@@ -1,6 +1,6 @@
 ## 애플리케이션 흐름도
 
-![Untitled](/Users/ruby/Desktop/project/aws-spa/imgs/flow/flow.png)
+
 
 <br>
 
