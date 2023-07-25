@@ -2,7 +2,7 @@
 import api from "@/api";
 
 const onclickButton = () => {
-  alert("API 요청!")
+  alert("API 요청!");
   api.post("/")
     .then(res => {
       alert("API 요청 완료!");
