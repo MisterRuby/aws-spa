@@ -1,4 +1,4 @@
-## AWS 환경에서의 SPA 애플리케이션 흐름도
+## 애플리케이션 흐름도
 
 ![Untitled](/Users/ruby/Desktop/project/aws-spa/imgs/flow/flow.png)
 
@@ -48,3 +48,6 @@
     - 버킷 웹 사이트 엔드포인트 url 주소로 요청
 
       ![Untitled](/Users/ruby/Desktop/project/aws-spa/imgs/s3/s3-7.png)
+
+<br>
+
