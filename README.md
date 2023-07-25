@@ -195,3 +195,24 @@
        ```
 
    2. 스크립트 파일에 실행 권한 추가
+
+<br><br>
+
+## TypeScript 에서 vue 컴포넌트 타입 지정
+
+### 문제
+
+- vue 에서 vue 파일을 import 할 경우 타입이 선언되지 않았다는 경고가 발생하는 상황이 발생
+
+  ![Untitled](./imgs/vue/vue-1.png)
+
+### 해결 방안
+
+- src 경로 아래에 shims-vue.d.ts 파일을 생성하여 vue 컴포넌트 타입을 정의한다.
+
+    ```tsx
+    declare module '*.vue' {
+        import type { DefineComponent } from 'vue'
+        const component: DefineComponent<{}, {}, any>
+    }
+    ```
